@@ -1,6 +1,10 @@
-module LeapYearKata ( isLeapYear ) where
+module LeapYearKata where
 
-isLeapYear :: Int -> Bool
-isLeapYear year
-  | year `mod` 4 == 0  = True
-  | otherwise = False
+data Year a = Common a
+            | Leap a
+            deriving(Eq, Ord, Show)
+
+defineYear :: Int -> Year Int
+defineYear year
+  | year `mod` 4 == 0  = Leap year
+  | otherwise = Common year
