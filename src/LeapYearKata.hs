@@ -6,5 +6,5 @@ data Year a = Common a
 
 defineYear :: Int -> Year Int
 defineYear year
-  | year `mod` 4 == 0  = Leap year
+  | year `mod` 4 == 0 = Leap year
   | otherwise = Common year
