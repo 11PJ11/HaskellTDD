@@ -1,4 +1,4 @@
-module LeapYearSpec (spec) where
+module LeapYear.LeapYearSpec (spec) where
 
 import           LeapYearKata
 import           Test.Hspec

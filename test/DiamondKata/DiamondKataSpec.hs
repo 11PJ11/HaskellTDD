@@ -1,4 +1,4 @@
-module DiamondKataSpec (spec) where
+module DiamondKata.DiamondKataSpec (spec) where
 
 import           DiamondKata
 import           Test.Hspec
