@@ -11,5 +11,4 @@ spec :: Spec
 spec =
   describe "diamond" $ do
     it "produces some lines" $ property $ do
-      forAll letters
-        (\letter -> not  $ null $ diamondLines letter)
+      forAll letters ((not . null) . diamondLines)
